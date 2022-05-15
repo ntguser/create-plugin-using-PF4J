@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.github.somaiasaeed</groupId>
+	<groupId>com.ntgeg.plugins</groupId>
 	<artifactId>pf4j-generic-plugin</artifactId>
 	<version>1.0.2</version>
 
@@ -36,20 +36,10 @@
 		</repository>
 	</distributionManagement>
 
-
-	<developers>
-		<developer>
-			<name>Somaia Saeed</name>
-			<email>selnggar@ntgclarity.com</email>
-			<organization>github</organization>
-			<organizationUrl>https://github.com</organizationUrl>
-		</developer>
-	</developers>
-
 	<scm>
-		<connection>scm:git:git://github.com/SomaiaSaeed/create-plugin-using-PF4J.git</connection>
-		<developerConnection>scm:git:ssh://github.com:SomaiaSaeed/create-plugin-using-PF4J.git</developerConnection>
-		<url>http://github.com//SomaiaSaeed/create-plugin-using-PF4J/tree/main/demo/api/src/main/java/org/pf4j/demo/api</url>
+		<connection>scm:git:git://github.com/ntguser/create-plugin-using-PF4J.git</connection>
+		<developerConnection>scm:git:ssh://github.com:ntguser/create-plugin-using-PF4J.git</developerConnection>
+		<url>http://github.com//ntguser/create-plugin-using-PF4J/tree/main/demo/api/src/main/java/org/pf4j/demo/api</url>
 	</scm>
 
 
