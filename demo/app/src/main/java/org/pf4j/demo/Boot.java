@@ -32,7 +32,7 @@ public class Boot {
         printLogo();
 
         // retrieves the spring application context
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringConfiguration.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext();
 
         // retrieves automatically the extensions for the Greeting.class extension point
         Greetings greetings = applicationContext.getBean(Greetings.class);

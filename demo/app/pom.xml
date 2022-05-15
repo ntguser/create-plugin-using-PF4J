@@ -4,11 +4,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<parent>
-		<groupId>org.pf4j.demo</groupId>
+		<groupId>com.ntgeg.plugins</groupId>
 		<artifactId>pf4j-spring-demo-parent</artifactId>
 		<version>0.8.0-SNAPSHOT</version>
 	</parent>
-
+	
+	<groupId>com.ntgeg.plugins</groupId>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>pf4j-spring-demo-app</artifactId>
 	<version>0.8.0-SNAPSHOT</version>
@@ -75,7 +76,11 @@
 			<version>${project.version}</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>com.ntgeg.plugins</groupId>
+			<artifactId>pf4j-generic-plugin</artifactId>
+			<version>1.0.2</version>
+		</dependency>
 
 		<!-- Logs -->
 		<dependency>
@@ -94,11 +99,6 @@
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>com.ntgeg.plugins</groupId>
-			<artifactId>pf4j-generic-plugin</artifactId>
-			<version>1.0.2</version>
 		</dependency>
 
 		<dependency>
