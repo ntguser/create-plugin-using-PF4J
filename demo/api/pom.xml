@@ -12,18 +12,20 @@
 	<packaging>jar</packaging>
 	<name>Generic interface to include in plugin</name>
 	<description>A Generic interface to include in Smart2Go to support plugin.</description>
-	<url>https://github.com/SomaiaSaeed/create-plugin-using-PF4J</url>
+	<url>https://github.com/ntguser/create-plugin-using-PF4J</url>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	<licenses>
-		<license>
-			<name>MIT License</name>
-			<url>http://www.opensource.org/licenses/mit-license.php</url>
-		</license>
-	</licenses>
+	
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
 	<distributionManagement>
 		<snapshotRepository>
@@ -36,8 +38,17 @@
 		</repository>
 	</distributionManagement>
 
+	<developers>
+		<developer>
+			<name>Somaia Saeed</name>
+			<email>selnggar@ntgclarity.com</email>
+			<organization>github</organization>
+			<organizationUrl>https://github.com</organizationUrl>
+		</developer>
+	</developers>
+
 	<scm>
-		<connection>scm:git:git://github.com/ntguser/create-plugin-using-PF4J.git</connection>
+		<connection>scm:git://github.com/ntguser/create-plugin-using-PF4J.git</connection>
 		<developerConnection>scm:git:ssh://github.com:ntguser/create-plugin-using-PF4J.git</developerConnection>
 		<url>http://github.com/ntguser/create-plugin-using-PF4J/tree/main/demo/api/src/main/java/org/pf4j/demo/api</url>
 	</scm>
@@ -94,7 +105,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
 				<version>1.5</version>
-
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
@@ -102,24 +112,14 @@
 						<goals>
 							<goal>sign</goal>
 						</goals>
+						<configuration>
+							<keyname>92F8A707EBDE38D4</keyname>
+							<passphraseServerId>ntguser</passphraseServerId>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
