@@ -83,7 +83,6 @@
 
     <modules>
         <module>plugin1</module>
-        <module>plugin2</module>
     </modules>
 
     <dependencies>
@@ -93,6 +92,13 @@
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.pf4j.demo</groupId>-->
+<!--            <artifactId>pf4j-spring-demo-api</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>

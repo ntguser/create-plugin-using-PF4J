@@ -16,8 +16,8 @@
 	<name>Demo Plugin #1</name>
 
 	<properties>
-		<plugin.id>Vin-plugin</plugin.id>
-		<plugin.class>org.pf4j.demo.welcome.VinMapping</plugin.class>
+		<plugin.id>TSSRTemplateMapping-plugin</plugin.id>
+		<plugin.class>org.pf4j.demo.welcome.TSSRTemplateMapping</plugin.class>
 		<plugin.version>0.0.1</plugin.version>
 		<plugin.provider>Decebal Suiu</plugin.provider>
 		<plugin.dependencies />
@@ -123,35 +123,35 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+
+		<!-- data jar -->
 		<dependency>
-			<groupId>com.ntgeg.plugins</groupId>
+			<groupId> com.intuit.quickbooks-online </groupId>
+			<artifactId> ipp-v3-java-data </artifactId>
+			<version> 6.0.7 </version>
+		</dependency>
+
+		<!-- devkit jar with dependencies -->
+		<dependency>
+			<groupId>com.intuit.quickbooks-online</groupId>
+			<artifactId>ipp-v3-java-devkit</artifactId>
+			<classifier>jar-with-dependencies</classifier>
+			<version> 6.0.7 </version>
+		</dependency>
+
+		<!-- oauth jar with dependencies -->
+		<dependency>
+			<groupId>com.intuit.quickbooks-online</groupId>
+			<artifactId>oauth2-platform-api</artifactId>
+			<classifier>jar-with-dependencies</classifier>
+			<version> 6.0.7 </version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.github.somaiasaeed</groupId>
 			<artifactId>pf4j-generic-plugin</artifactId>
-			<version>1.0.2</version>
+			<version>1.0.0</version>
 		</dependency>
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>5.2.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>5.2.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>ooxml-schemas</artifactId>
-			<version>1.4</version>
-		</dependency>
-
 	</dependencies>
 
 </project>
