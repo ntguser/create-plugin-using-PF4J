@@ -1,7 +1,42 @@
-.idea/
 target/
 *.iml
 .settings
 .project
 .classpath
 demo-dist/
+**.css
+
+#exclude log & build#
+
+.svn
+**.log
+**.class
+**.aiml
+**.html
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+**.png
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+*.attach_pid3890
+*.attach_pid*
+/STAGLog/
+/bin/

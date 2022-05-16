@@ -13,11 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pf4j.demo.api;
+package org.pf4j.demo;
 
-import java.util.HashMap;
-import org.pf4j.ExtensionPoint;
+import org.pf4j.spring.SpringPluginManager;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 
-public interface GenericPluginInterface extends ExtensionPoint {
-	HashMap<String, Object> runPlugin(HashMap<String, Object> inp) throws Exception;
+/**
+ * @author Decebal Suiu
+ */
+@Configuration
+public class SpringConfiguration {
+
+    @Bean
+    public SpringPluginManager pluginManager() {
+        return new SpringPluginManager();
+    }
+
+    @Bean
+    @DependsOn("pluginManager")
+    public Greetings greetings() {
+        return new Greetings();
+    }
+
 }
