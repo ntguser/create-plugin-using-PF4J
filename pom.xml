@@ -8,7 +8,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.ntgeg.plugins</groupId>
+    <groupId>org.pf4j</groupId>
     <artifactId>pf4j-spring-parent</artifactId>
     <version>0.8.0-SNAPSHOT</version>
     <packaging>pom</packaging>
